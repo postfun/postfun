@@ -1,4 +1,4 @@
-$(function() { // Document ready function
+(function() { // Document ready function
   let url = $('#happening-feed').attr('url'); // This is the URL for your JSON feed.
 
   //Pagination and modal
