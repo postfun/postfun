@@ -1,4 +1,4 @@
-import Feed from 'feed.js';
+import Feed from './feed.js';
 function fetchPodcastFeed() {
     const feedUrl = "https://feeds.castos.com/8ro36?uuid=631ba96a65a2f";
     const feed = new Feed({ url: feedUrl });
