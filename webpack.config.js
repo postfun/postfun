@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development', // Or 'production'
   entry: './js/script.js',
