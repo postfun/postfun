@@ -1,8 +1,21 @@
 module.exports = {
-    entry: './js/script.js', // Your main JavaScript file
-    output: {
-      filename: 'bundle.js', // Name of the bundled file
-      path: __dirname + '/dist', // Output directory
-    },
-  };
-  
+  mode: 'development', // Or 'production'
+  entry: './js/script.js',
+  output: {
+    filename: 'bundle.js',
+    path: __dirname + '/dist',
+  },
+  module: {
+    rules: [
+      // Add any necessary loaders here, e.g.,
+      // {
+      //   test: /\.css$/i,
+      //   use: ['style-loader', 'css-loader'],
+      // },
+      // {
+      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      //   use: ['file-loader'],
+      // },
+    ],
+  },
+};
