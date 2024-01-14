@@ -7,15 +7,14 @@ module.exports = {
   },
   module: {
     rules: [
-      // Add any necessary loaders here, e.g.,
-      // {
-      //   test: /\.css$/i,
-      //   use: ['style-loader', 'css-loader'],
-      // },
-      // {
-      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      //   use: ['file-loader'],
-      // },
+       {
+         test: /\.css$/i,
+         use: ['style-loader', 'css-loader'],
+       },
+       {
+         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+         use: ['file-loader'],
+       },
     ],
   },
 };
