@@ -1,7 +1,7 @@
 import Feed from './feed.js';
 
 function fetchPodcastFeed() {
-  const feedUrl = "https://feeds.castos.com/8ro36?uuid=631ba96a65a2f";
+  const feedUrl = "https://feeds.castos.com/owg73";
   const feed = new Feed({ url: feedUrl });
   feed.load((err, items) => {
     if (err) {
