@@ -1,13 +1,20 @@
 <html>
-   <head>
-      <title>My-Blog</title>
-      <link rel="icon"     href="https://image.flaticon.com/icons/svg/13/13706.svg" type="image/gif" sizes="16x16">
-       <link rel="stylesheet" href="main.css" >
-<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-  awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <head>
+    <script src="path/to/feed.js"></script>
+    <script src="path/to/plyr.js"></script>
+    <script src="script.js"></script>
+  </head>  
 <body>
-<div class="intro">
-<p id="name" name="intro">Hello Friends Welcome to my Food Blog Site</p>
+  <div id="podcast-feed">
+    <h2>Podcast Episodes</h2>
+    <ul id="episode-list">
+      <li>
+        <h3>Episode 1: Title</h3>
+        <p>Episode description goes here.</p>
+        <div data-plyr-provider="podcast" data-plyr-embed-id="podcast-episode-1"></div>
+      </li>
+      </ul>
+  </div>  
 </div>
 </body>
 </html>
