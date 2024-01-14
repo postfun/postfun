@@ -2,7 +2,7 @@ module.exports = {
   mode: 'development', // Or 'production'
   entry: './js/script.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'dist/bundle.js',
     path: __dirname + '/dist',
   },
   module: {
