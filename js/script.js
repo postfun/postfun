@@ -43,4 +43,4 @@ Plyr.setup().then(() => {
     // Additional configuration for each player if needed
   });
 });
-export default Feed;
+  

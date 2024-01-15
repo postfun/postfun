@@ -426,3 +426,4 @@ $(function() { // Document ready function
     element.stop().animate({ height: autoHeight }, time, function(){$('#advance-search').css("height", "auto");}); // Animate to Auto Height
   };
 });
+export default Feed;
