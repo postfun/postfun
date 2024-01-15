@@ -8,8 +8,9 @@
         </ul>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="js/plyr.js"></script>
-    <script src="dist/bundle.js"></script>
+    <script type="module">
+      import Plyr from './js/plyr.js';  // Import Plyr as a module
+      import './dist/bundle.js';       // Import your bundled JavaScript
+    </script>
    </body>
 </html>
