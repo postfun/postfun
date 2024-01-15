@@ -1,4 +1,4 @@
-import Feed from './feed.js';
+import Feed from './feed'; // No need for .js extension
 
 function fetchPodcastFeed() {
   const feedUrl = "https://feeds.castos.com/owg73";
