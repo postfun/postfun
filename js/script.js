@@ -37,10 +37,9 @@ function populateEpisodeList(episodes) {
 fetchPodcastFeed();
 
 Plyr.setup().then(() => {
-  const playerContainers = document.querySelectorAll("[data-plyr-provider]");
+  const playerContainers = document.querySelectorAll("data-plyr-provider");
   playerContainers.forEach(container => {
     const player = new Plyr(container);
     // Additional configuration for each player if needed
   });
 });
-  
