@@ -8,6 +8,14 @@ function fetchPodcastFeed() {
       console.error("Error fetching RSS feed:", err);
     } else {
       populateEpisodeList(items);
+       // Plyr initialization moved inside the callback
+       Plyr.setup().then(() => {
+        const playerContainers = document.querySelectorAll("data-plyr-provider");
+        playerContainers.forEach(container => {
+          const player = new Plyr(container);
+          // Additional configuration for each player if needed
+        });
+      });
     }
   });
 }
@@ -35,11 +43,3 @@ function populateEpisodeList(episodes) {
 }
 
 fetchPodcastFeed();
-
-Plyr.setup().then(() => {
-  const playerContainers = document.querySelectorAll("data-plyr-provider");
-  playerContainers.forEach(container => {
-    const player = new Plyr(container);
-    // Additional configuration for each player if needed
-  });
-});
